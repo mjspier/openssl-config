@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# password for pruvate keys
+# password for private keys
 PASS=toor
 
 # helper function
@@ -17,14 +17,12 @@ mkdir certs crl
 echo "clean up folders"
 array=( root-ca client-ca tls-ca)
 for i in "${array[@]}" ; do
-    # create folders and database
     mkdir -p ca/$i/db 
     mkdir -p ca/$i/private
     cp /dev/null ca/$i/db/$i.db
     cp /dev/null ca/$i/db/$i.db.attr
     echo 01 > ca/$i/db/$i.crt.srl
     echo 01 > ca/$i/db/$i.crl.srl
-    # create cert
 done
 
 
