@@ -1,3 +1,5 @@
-ca
-crl
-certs
+**/ca
+**/crl
+**/certs
+**/*.pem
+**/*.key

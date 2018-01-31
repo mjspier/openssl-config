@@ -1,6 +1,16 @@
 # PKI playground
 
 This is a PKI playground to get more familiar with the subject and try some scenarios.
+
+
+## Self
+
+Self-signed cert which can be used for https.
+
+
+## Tree
+
+The tree folder is a PKI tree example.
 The PKI tree looks like this:
 
 ```
